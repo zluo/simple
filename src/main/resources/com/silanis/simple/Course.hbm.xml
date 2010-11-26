@@ -6,7 +6,7 @@
     <class name="com.silanis.simple.Course" table="COURSE">
         <id name="id" type="long">
             <column name="ID" />
-            <generator class="native" />
+            <generator class="identity" />
         </id>
         <property name="name" type="java.lang.String">
             <column name="NAME" />

@@ -6,7 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class CouseDaoImpl implements CourseDao{
+public class CourseDaoImpl implements CourseDao{
 
 	private static final SessionFactory sessionFactory;
 	static
