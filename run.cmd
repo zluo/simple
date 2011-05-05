@@ -1,0 +1,1 @@
+mvn exec:java -Dexec.mainClass="com.silanis.simple.App"

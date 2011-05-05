@@ -1,4 +1,4 @@
-package com.silanis.simple;
+package com.silanis.simple.domain;
 
 public class Course {
 	private long id;

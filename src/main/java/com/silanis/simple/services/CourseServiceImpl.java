@@ -1,6 +1,10 @@
-package com.silanis.simple;
+package com.silanis.simple.services;
 
 import java.util.List;
+
+import com.silanis.simple.dao.CourseDao;
+import com.silanis.simple.domain.Course;
+
 
 public class CourseServiceImpl implements CourseService {
 	CourseDao courseDao;

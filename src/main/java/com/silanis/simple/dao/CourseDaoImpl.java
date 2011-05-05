@@ -1,10 +1,14 @@
-package com.silanis.simple;
+package com.silanis.simple.dao;
 
 import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+
+import com.silanis.simple.domain.Course;
+
+
 
 public class CourseDaoImpl implements CourseDao{
 

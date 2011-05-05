@@ -4,12 +4,25 @@
 <hibernate-configuration>
  <session-factory name="">
   <property name="hibernate.connection.driver_class">org.hsqldb.jdbcDriver</property>
+<!-- With this configuration, you still need start hsql db -->
+<!-- 
   <property name="hibernate.connection.url">jdbc:hsqldb:hsql://localhost/</property>
+ -->
+ <!-- 
+   With mem setup, don't need start the hsql db.
+  -->
+  <property name="hibernate.connection.url">jdbc:hsqldb:mem:mymemdb</property>
   <property name="hibernate.connection.username">SA</property>
   <property name="hibernate.dialect">org.hibernate.dialect.HSQLDialect</property>
+
+  <!--  Automatically validates or exports schema DDL to the database
+   when the SessionFactory is created. With create-drop, the database 
+   schema will be dropped when the SessionFactory is closed explicitly-->
+
   <property name="hbm2ddl.auto">create</property>
+
   <property name="connection.pool_size">2</property>
   <property name="show_sql">true</property>
-  <mapping resource="com/silanis/simple/Course.hbm.xml"/>
+  <mapping resource="com/silanis/simple/domain/Course.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>

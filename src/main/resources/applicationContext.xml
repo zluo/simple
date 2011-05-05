@@ -5,8 +5,8 @@
   
 
 	<bean id="courseService"
-		class="com.silanis.simple.CourseServiceImpl" scope="prototype">
+		class="com.silanis.simple.services.CourseServiceImpl" scope="prototype">
 		<property name="courseDao" ref="courseDao"></property>
 	</bean>
-	<bean id="courseDao" class="com.silanis.simple.CourseDaoImpl" scope="prototype"></bean>
+	<bean id="courseDao" class="com.silanis.simple.dao.CourseDaoImpl" scope="prototype"></bean>
 </beans>
